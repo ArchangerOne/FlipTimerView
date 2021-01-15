@@ -125,6 +125,35 @@ class CountDownClock : LinearLayout {
         val minutes = TimeUnit.MILLISECONDS.toMinutes(timeToStart - (TimeUnit.DAYS.toMillis(days) + TimeUnit.HOURS.toMillis(hours)))
         val seconds = TimeUnit.MILLISECONDS.toSeconds(timeToStart - (TimeUnit.DAYS.toMillis(days) + TimeUnit.HOURS.toMillis(hours) + TimeUnit.MINUTES.toMillis(minutes)))
 
+        val flipJours = findViewById<TextView>(R.id.daysflip)
+        val flipHeures = findViewById<TextView>(R.id.ddd)
+        val flipMinutes = findViewById<TextView>(R.id.ds)
+        val flipSecondes = findViewById<TextView>(R.id.sssk)
+
+        if(days <= 1){
+            flipJours.text = "Jour"
+        }else {
+            flipJours.text = "Jours"
+        }
+        
+        if(hours <= 1){
+            flipHeures.text = "Heure"
+        }else {
+            flipHeures.text = "Heures"
+        }
+        
+        if(minutes <= 1){
+            flipMinutes.text = "Min"
+        }else {
+            flipMinutes.text = "Mins"
+        }
+        
+        if(minutes <= 1){
+            flipSecondes.text = "Sec"
+        }else {
+            flipSecondes.text = "Secs"
+        }
+        
         val daysString = days.toString()
         val hoursString = hours.toString()
         val minutesString = minutes.toString()
