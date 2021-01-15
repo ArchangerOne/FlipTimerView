@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">FlipTimerViewLibrary</string>
-    <string name="Days">Jours</string>
-    <string name="Hours">Heures</string>
-    <string name="Mins">Mins</string>
-    <string name="Secs">Secs</string>
+    <string name="Days">Jour</string>
+    <string name="Hours">Heure</string>
+    <string name="Mins">Min</string>
+    <string name="Secs">Sec</string>
     <string name="_8">8</string>
 </resources>
