@@ -75,9 +75,9 @@ class CountDownClock : LinearLayout {
         }
     }
 
-    ////////////////
+    ///////////////////
     // Public methods
-    ////////////////
+    //////////////////
 
     private var milliLeft: Long = 0
 
